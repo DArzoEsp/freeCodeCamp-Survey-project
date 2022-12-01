@@ -1,0 +1,66 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <img src="">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve this platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" name="name" required /></label>
+        <label id="email-label"for="email">Email<input id="email" type="email" placeholder="Enter your email" name="email" required/></label>
+        <label id="number-label" for="number">Age (Optional)<input id="number" type="number" min="0" max="120" placeholder="Age" name="number" />
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" required>
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time Job</option>
+          <option value="3">Full time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="recommend" ><input id="recommend" type="radio" name="recommend" value="1" class="inline" />Definitely</label>
+        <label for="recommend" ><input id="recommend" type="radio" name="recommend"  value="2" class="inline" />Maybe</label>
+        <label for="recommend" ><input id="recommend" type="radio" name="recommend" value="3" class="inline" />Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite feature of freeCodeCamp?</label>
+        <select id="dropdown" required>
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open source</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="1" class="inline" />Front-End Projects</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="2" class="inline" />Back-End Projects</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="3" class="inline" />Data Visualization</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="4" class="inline" />Challenges</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="5" class="inline" />Open Source Community</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="6" class="inline" />Gitter help rooms</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="7" class="inline" />Videos</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="8" class="inline" />City Meetups</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="9" class="inline" />Wiki</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="10" class="inline" />Forum</label>
+        <label for="improve"><input id="improve" type="checkbox" name="improve" value="11" class="inline" />Additional Courses</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments-suggestions">Any comments or suggestions?<textarea id="comments-suggestions" cols="93" rows="6" placeholder="Enter your comments here..." ></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />   
+    </form>
+  </body>
+</html>
